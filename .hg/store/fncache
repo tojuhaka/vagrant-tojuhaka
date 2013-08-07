@@ -1,0 +1,14 @@
+data/manifests/base.pp.i
+data/manifests/jyuplone.pp.i
+data/.hgsubstate.i
+data/manifests/init.pp.i
+data/manifests/bootstrap.pp.i
+data/manifests/vmfusion.pp.i
+data/.hgsub.i
+data/vagrant.pp.i
+data/.hgignore.i
+data/bootstrap.pp.i
+data/manifests/jyu.pp.i
+data/manifests/rabbitmq.pp.i
+data/Vagrantfile.i
+data/vmfusion.pp.i

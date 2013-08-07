@@ -1,0 +1,15 @@
+epel                  = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/epel
+stdlib                = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/puppetlabs-stdlib
+rabbitmq              = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/puppetlabs-rabbitmq
+jyu_kopla_bootstrap   = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_bootstrap
+jyu_kopla_buildout    = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_buildout
+jyu_kopla_memcached   = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_memcached
+jyu_kopla_mercurial   = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_mercurial
+jyu_kopla_metronome   = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_metronome
+jyu_kopla_phantomjs   = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_phantomjs
+jyu_kopla_pip         = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_pip
+jyu_kopla_plone       = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_plone
+jyu_kopla_python      = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_python
+jyu_kopla_rabbitmq    = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_rabbitmq
+jyu_kopla_supervisor  = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_supervisor
+jyu_kopla_virtualenvs = [git]gitolite3@git.cc.jyu.fi:itp-puppet/puppet-modules/jyu_kopla_virtualenvs
