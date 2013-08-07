@@ -35,6 +35,7 @@ class vim_tojuhaka {
       user => "vagrant",
       command => "/home/vagrant/vimconfig/setupvim.sh",
       path => ["/bin", "/usr/bin", "/usr/local/bin"],
+      timeout => 1800,
       environment => "HOME=/home/vagrant",
       require => [
         Exec["clone vimconfig"],

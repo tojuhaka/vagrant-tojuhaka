@@ -13,4 +13,5 @@ class { "jyu_kopla_rabbitmq": }
 class { "jyu_kopla_supervisor": }
 class { "jyu_kopla_virtualenvs": }
 class { "vim_tojuhaka": }
+class { "pyramid_tojuhaka": }
 

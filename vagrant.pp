@@ -125,14 +125,27 @@ bookmarks =
 mercurial_keyring =
 
 [auth]
-rhodecode.schemes = https
-rhodecode.prefix = jyuplone.cc.jyu.fi/code
-rhodecode.username = ${rhodecode_username}
+acme.prefix = jyuplone.cc.jyu.fi/code/
+acme.username = ${rhodecode_username}
+acme.schemes = http https
+
+[ui]
+username = Toni Haka-Risku <toni.haka-risku@jyu.fi>
+verbose = True
+merge = vimdiff
+
+[merge-tools]
+vimdiff.executable = vim
+vimdiff.args = -d $base $local $output $other +close +close
+
+[alias]
+slog = log -l5 --template '{rev}:{node|short} {desc|firstline}\\n'
 ",
   owner => "vagrant",
   group => "vagrant",
   require => Exec["pip install mercurial_keyring"]
 }
+
 
 
 if $configure_verkkomaksut {
