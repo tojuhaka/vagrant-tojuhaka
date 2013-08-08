@@ -66,6 +66,14 @@ exec { "chown -R vagrant /var/buildout/extends-cache":
   path => ["/bin"]
 }
 
+exec { "download mercurial_keyring.py":
+  user => "vagrant",
+  cwd => "/home/vagrant",
+  command => "wget http://bitbucket.org/Mekk/mercurial_keyring/raw/default/mercurial_keyring.py",
+  path => ["/bin", "/usr/bin", "/usr/local/bin"]
+}
+
+
 file { "/home/vagrant/.buildout/default.cfg":
   ensure => "present",
   content => '[buildout]
@@ -122,17 +130,20 @@ file { "/home/vagrant/.hgrc":
   ensure => "present",
   content => "[extensions]
 bookmarks =
-mercurial_keyring =
+mercurial_keyring = /home/vagrant/mercurial_keyring.py
 
 [auth]
-acme.prefix = jyuplone.cc.jyu.fi/code/
+acme.prefix = jyuplone.cc.jyu.fi/code
 acme.username = ${rhodecode_username}
 acme.schemes = http https
 
 [ui]
-username = Toni Haka-Risku <toni.haka-risku@jyu.fi>
+username = ${rhodecode_uiname}
 verbose = True
 merge = vimdiff
+
+[web]
+cacerts = /etc/pki/tls/certs/ca-bundle.crt
 
 [merge-tools]
 vimdiff.executable = vim
